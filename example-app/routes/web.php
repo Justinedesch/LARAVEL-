@@ -21,8 +21,8 @@ Route::get('/product', function () {
     return 'liste des produits';
 });
 
-Route::get('/product/id', function () {
-    return 'Fiche du produit {id}';
+Route::get('/product/{id}', function (string $id) {
+    return 'Fiche du produit' ;
 });
 
 Route::get('/cart', function () {
